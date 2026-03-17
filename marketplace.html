@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta
     name="description"
-    content="Marketplace BMW Club Sardegna con categorie dedicate a felpe, t-shirt e cappellini."
+    content="Marketplace BMW Club Sardegna con categorie dedicate a felpe, t-shirt, cappellini e accessori."
   >
   <title>Marketplace | BMW Club Sardegna</title>
   <link rel="stylesheet" href="styles.css">
@@ -84,6 +84,19 @@
             tabindex="-1"
           >
             Cappellini
+          </button>
+          <button
+            class="marketplace-tab"
+            type="button"
+            role="tab"
+            id="tab-portachiavi"
+            aria-selected="false"
+            aria-controls="panel-portachiavi"
+            data-tab-target="panel-portachiavi"
+            data-category="Portachiavi"
+            tabindex="-1"
+          >
+            Portachiavi
           </button>
         </div>
 
@@ -164,6 +177,24 @@
           hidden
         >
           <div class="product-grid">
+            <article class="product-card" data-category="Cappellini" data-product="Cappellino Trucker Club Sardegna">
+              <span class="product-tag">Cappellini</span>
+              <div class="product-visual">
+                <img
+                  src="assets/capellino-marketplace.png"
+                  alt="Cappellino BMW Club Sardegna bianco, rosso e nero"
+                >
+                <span>Bianco, rosso e nero</span>
+              </div>
+              <h3>Cappellino Trucker Club Sardegna</h3>
+              <p>
+                Modello ispirato al cappellino mostrato: frontale bianco con logo BMW Club Sardegna,
+                rete rossa laterale e visiera nera.
+              </p>
+              <button class="button button-secondary product-select-button" type="button" data-select-product>
+                Ordina questo capo
+              </button>
+            </article>
             <article class="product-card" data-category="Cappellini" data-product="Cap Classic BCS">
               <span class="product-tag">Cappellini</span>
               <h3>Cap Classic BCS</h3>
@@ -184,6 +215,35 @@
               <span class="product-tag">Cappellini</span>
               <h3>Cap Sardegna Route</h3>
               <p>Un modello che lega il merchandising al territorio e alle strade iconiche.</p>
+              <button class="button button-secondary product-select-button" type="button" data-select-product>
+                Ordina questo capo
+              </button>
+            </article>
+          </div>
+        </div>
+
+        <div
+          class="marketplace-panel"
+          id="panel-portachiavi"
+          role="tabpanel"
+          aria-labelledby="tab-portachiavi"
+          hidden
+        >
+          <div class="product-grid">
+            <article class="product-card" data-category="Portachiavi" data-product="Portachiavi Logo Club Sardegna">
+              <span class="product-tag">Portachiavi</span>
+              <div class="product-visual">
+                <img
+                  src="assets/portachiave-marketplace.png"
+                  alt="Portachiave BMW Club Sardegna tondo nero con dettagli blu e argento"
+                >
+                <span>Nero, argento e blu</span>
+              </div>
+              <h3>Portachiavi Logo Club Sardegna</h3>
+              <p>
+                Portachiavi tondo ispirato al modello mostrato, con finitura scura, dettagli metallici
+                e logo BMW Club Sardegna in rilievo.
+              </p>
               <button class="button button-secondary product-select-button" type="button" data-select-product>
                 Ordina questo capo
               </button>
@@ -236,6 +296,7 @@
                     <option value="Felpe">Felpe</option>
                     <option value="T-shirt">T-shirt</option>
                     <option value="Cappellini">Cappellini</option>
+                    <option value="Portachiavi">Portachiavi</option>
                   </select>
                 </label>
 
