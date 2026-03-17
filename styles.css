@@ -484,6 +484,7 @@ h1 {
 }
 
 .panel-link {
+  display: block;
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
 }
 
@@ -500,6 +501,12 @@ h1 {
   margin-top: 24px;
   font-weight: 700;
   color: var(--text);
+}
+
+.panel-compact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .panel h3,
