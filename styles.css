@@ -130,8 +130,6 @@ button {
 .experience-copy p,
 .feature-list li,
 .board-row span,
-.membership-card p,
-.membership-steps p,
 .footer-note,
 .footer-actions a {
   color: var(--muted);
@@ -313,9 +311,7 @@ h1 {
 .showcase-grid article,
 .panel,
 .route-card,
-.experience-board,
-.membership-card,
-.membership-steps article {
+.experience-board {
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.03));
   backdrop-filter: blur(10px);
@@ -370,8 +366,7 @@ h1 {
 
 .card-tag,
 .mini-label,
-.route-kicker,
-.membership-label {
+.route-kicker {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -425,8 +420,7 @@ h1 {
 
 .showcase-grid strong,
 .panel h3,
-.route-card h3,
-.membership-card h3 {
+.route-card h3 {
   display: block;
   margin-top: 10px;
   font-size: 1.26rem;
@@ -483,9 +477,7 @@ h1 {
 }
 
 .panel p,
-.route-card p,
-.membership-card p,
-.membership-steps p {
+.route-card p {
   margin: 16px 0 0;
   line-height: 1.7;
 }
@@ -523,17 +515,14 @@ h1 {
     linear-gradient(135deg, rgba(91, 113, 140, 0.54), rgba(18, 30, 42, 0.26));
 }
 
-.experience-layout,
-.membership-layout {
+.experience-layout {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   gap: 18px;
 }
 
 .experience-copy,
-.experience-board,
-.membership-card,
-.membership-steps {
+.experience-board {
   border-radius: var(--radius-lg);
   padding: 28px;
 }
@@ -576,30 +565,6 @@ h1 {
   font-size: 1.18rem;
 }
 
-.membership-card {
-  display: grid;
-  align-content: start;
-  gap: 18px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02)),
-    linear-gradient(135deg, rgba(47, 128, 255, 0.12), rgba(223, 193, 151, 0.12));
-}
-
-.membership-steps {
-  display: grid;
-  gap: 14px;
-}
-
-.membership-steps article {
-  padding: 20px;
-  border-radius: 20px;
-}
-
-.membership-steps strong {
-  font-size: 1.6rem;
-  color: var(--sand);
-}
-
 .site-footer {
   display: grid;
   gap: 24px;
@@ -632,8 +597,7 @@ h1 {
   .hero,
   .intro-layout,
   .route-grid,
-  .experience-layout,
-  .membership-layout {
+  .experience-layout {
     grid-template-columns: 1fr;
   }
 
