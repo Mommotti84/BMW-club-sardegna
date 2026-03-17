@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Marketplace BMW Club Sardegna con categorie dedicate a felpe, t-shirt e cappellini."
+  >
+  <title>Marketplace | BMW Club Sardegna</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="BMW Club Sardegna Home">
+        <span class="brand-mark">BCS</span>
+        <span class="brand-copy">
+          <strong>BMW Club Sardegna</strong>
+          <small>Passione, strade, comunita</small>
+        </span>
+      </a>
+
+      <nav class="site-nav story-nav" aria-label="Navigazione pagina marketplace">
+        <a href="index.html#club">Home</a>
+        <a href="marketplace.html">Marketplace</a>
+        <a class="nav-cta" href="index.html#contatti">Contatti</a>
+      </nav>
+    </header>
+
+    <main class="story-page marketplace-page">
+      <section class="section story-hero reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Marketplace</p>
+          <h1>Il merchandising del club, organizzato per categoria.</h1>
+        </div>
+        <p class="story-lead">
+          Una vetrina semplice e ordinata per presentare i capi ufficiali del BMW Club Sardegna e
+          rendere subito accessibili le collezioni principali.
+        </p>
+      </section>
+
+      <section class="section marketplace-section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Categorie</p>
+          <h2>Scegli la linea che vuoi mettere in evidenza.</h2>
+        </div>
+
+        <div class="marketplace-tabs" role="tablist" aria-label="Categorie marketplace">
+          <button
+            class="marketplace-tab is-active"
+            type="button"
+            role="tab"
+            id="tab-felpe"
+            aria-selected="true"
+            aria-controls="panel-felpe"
+            data-tab-target="panel-felpe"
+          >
+            Felpe
+          </button>
+          <button
+            class="marketplace-tab"
+            type="button"
+            role="tab"
+            id="tab-tshirt"
+            aria-selected="false"
+            aria-controls="panel-tshirt"
+            data-tab-target="panel-tshirt"
+            tabindex="-1"
+          >
+            T-shirt
+          </button>
+          <button
+            class="marketplace-tab"
+            type="button"
+            role="tab"
+            id="tab-cappellini"
+            aria-selected="false"
+            aria-controls="panel-cappellini"
+            data-tab-target="panel-cappellini"
+            tabindex="-1"
+          >
+            Cappellini
+          </button>
+        </div>
+
+        <div
+          class="marketplace-panel is-active"
+          id="panel-felpe"
+          role="tabpanel"
+          aria-labelledby="tab-felpe"
+        >
+          <div class="product-grid">
+            <article class="product-card">
+              <span class="product-tag">Felpe</span>
+              <h3>Felpa Club Essential</h3>
+              <p>Versione pulita con branding frontale discreto e taglio sportivo.</p>
+            </article>
+            <article class="product-card">
+              <span class="product-tag">Felpe</span>
+              <h3>Felpa Road Tour</h3>
+              <p>Ispirata ai raduni del club, con un look piu deciso per gli eventi stagionali.</p>
+            </article>
+            <article class="product-card">
+              <span class="product-tag">Felpe</span>
+              <h3>Felpa Signature BCS</h3>
+              <p>Modello premium pensato per una linea ufficiale elegante e riconoscibile.</p>
+            </article>
+          </div>
+        </div>
+
+        <div
+          class="marketplace-panel"
+          id="panel-tshirt"
+          role="tabpanel"
+          aria-labelledby="tab-tshirt"
+          hidden
+        >
+          <div class="product-grid">
+            <article class="product-card">
+              <span class="product-tag">T-shirt</span>
+              <h3>T-shirt Classic Logo</h3>
+              <p>Una base essenziale per il merchandising quotidiano del club.</p>
+            </article>
+            <article class="product-card">
+              <span class="product-tag">T-shirt</span>
+              <h3>T-shirt Event Edition</h3>
+              <p>Perfetta per lanciare versioni dedicate ai singoli raduni o tour speciali.</p>
+            </article>
+            <article class="product-card">
+              <span class="product-tag">T-shirt</span>
+              <h3>T-shirt Coastal Drive</h3>
+              <p>Una proposta fresca e legata all'identita sarda del club.</p>
+            </article>
+          </div>
+        </div>
+
+        <div
+          class="marketplace-panel"
+          id="panel-cappellini"
+          role="tabpanel"
+          aria-labelledby="tab-cappellini"
+          hidden
+        >
+          <div class="product-grid">
+            <article class="product-card">
+              <span class="product-tag">Cappellini</span>
+              <h3>Cap Classic BCS</h3>
+              <p>Profilo pulito e logo in evidenza per un accessorio sempre portabile.</p>
+            </article>
+            <article class="product-card">
+              <span class="product-tag">Cappellini</span>
+              <h3>Cap Track Edition</h3>
+              <p>Look piu sportivo, pensato per eventi, raduni e contenuti social del club.</p>
+            </article>
+            <article class="product-card">
+              <span class="product-tag">Cappellini</span>
+              <h3>Cap Sardegna Route</h3>
+              <p>Un modello che lega il merchandising al territorio e alle strade iconiche.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

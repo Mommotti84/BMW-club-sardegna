@@ -457,7 +457,7 @@ h1 {
 
 .intro-layout {
   display: grid;
-  grid-template-columns: 1.3fr repeat(3, 1fr);
+  grid-template-columns: 1.3fr repeat(4, 1fr);
   gap: 16px;
 }
 
@@ -662,6 +662,88 @@ h1 {
   gap: 16px;
 }
 
+.marketplace-page {
+  gap: 22px;
+}
+
+.marketplace-section {
+  display: grid;
+  gap: 26px;
+}
+
+.marketplace-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.marketplace-tab {
+  min-height: 50px;
+  padding: 0 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+  transition: transform 180ms ease, border-color 180ms ease, color 180ms ease, background 180ms ease;
+}
+
+.marketplace-tab:hover,
+.marketplace-tab:focus-visible {
+  color: var(--text);
+  border-color: rgba(123, 215, 246, 0.38);
+}
+
+.marketplace-tab.is-active {
+  color: #061018;
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--sand), #fff0d8);
+}
+
+.marketplace-panel {
+  display: none;
+}
+
+.marketplace-panel.is-active {
+  display: block;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.product-card {
+  min-height: 220px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
+    linear-gradient(135deg, rgba(47, 128, 255, 0.12), rgba(223, 193, 151, 0.08));
+  backdrop-filter: blur(10px);
+}
+
+.product-tag {
+  display: inline-flex;
+  margin-bottom: 18px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--cyan);
+}
+
+.product-card h3 {
+  line-height: 1.08;
+}
+
+.product-card p {
+  margin: 16px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 .story-milestone {
   padding: 18px 20px;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -709,7 +791,8 @@ h1 {
   .intro-layout,
   .route-grid,
   .experience-layout,
-  .story-layout {
+  .story-layout,
+  .product-grid {
     grid-template-columns: 1fr;
   }
 
@@ -801,6 +884,11 @@ h1 {
   .footer-actions {
     flex-direction: column;
     gap: 12px;
+  }
+
+  .marketplace-tabs {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
